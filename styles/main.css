@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #394155;
+    font-family: 'Inter' ,sans-serif;
+}
+.main-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+}
+.counter {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 130px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #5A6585;
+    border-radius: 64px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);}
+#counter_bar {
+    width: 128px;
+    max-height: 398px;
+    min-height: 128px;
+    border-radius: 64px;
+    padding: 12px;
+    background:linear-gradient(180deg, #E43854 0%, #F65A73 100%);
+    transition: all 0.25s;
+}
+.counter_bar_indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    color: #2F3549;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+
+}
+.percent {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 32px;
+}
+.counter_button {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #5A6585;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+;
+    border-radius: 50%;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.counter_button:hover {
+    background-color: #5A6585;
+    transform: scale(1);
+}
+.main-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toast {
+    position: absolute;
+    bottom: -100px;
+    padding: 16px 117px;
+    border: 1px solid #58CEA9;
+    border-radius: 64px;
+    background-color: #12B480;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: all 0.25s;
+    visibility: hidden;
+    opacity: 0;
+
+}
+.toast--visibility {
+    opacity: 1;
+    visibility: visible;
+    bottom: 64px;
+}
